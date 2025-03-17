@@ -1,0 +1,79 @@
+body{
+    font-family: "Black Hans Sans", sans-serif;
+}
+
+.navigation {
+    position: relative;
+}
+
+.left-panel {
+    position: fixed;
+    top: 0;
+    left: -50vw;
+    width: 30vw;
+    height: 100vh;
+    background-color: black;
+    transition: left 0.9s ease-in-out;
+    z-index: 1000;
+}
+
+.left-panel.active {
+    left: 0;
+}
+
+#clickableImage {
+    cursor: pointer;
+}
+
+#closePanel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+/*-- Profile --*/
+.profile {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    flex-direction: row; /* Default: horizontal layout */
+}
+
+.profile img {
+    max-width: 60%;
+    height: auto;
+    margin: 10px auto;
+    margin-left: 10%;
+}
+
+.right-profile {
+    flex: 1;
+    margin-left: 8%;
+}
+
+.right-profile h1 {
+    font-size: 60px;
+    font-weight: 1000;
+    letter-spacing: -3px;
+    margin: 10px auto;
+}
+.right-profile hr{
+    width: 80%;
+    border: 2px solid black;
+    margin-left: 0%;
+}
+@media (max-width: 600px) { /* Adjust breakpoint as needed */
+    .profile {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .profile img {
+        max-width: 100%; /* Make image wider on smaller screens */
+    }
+}
