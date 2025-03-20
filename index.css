@@ -1,5 +1,6 @@
-body{
+* {
     font-family: "Black Hans Sans", sans-serif;
+    scroll-behavior: smooth;
 }
 
 .navigation {
@@ -23,6 +24,9 @@ body{
 
 #clickableImage {
     cursor: pointer;
+    width: 90px;
+    max-width: 100px;
+    position: fixed;
 }
 
 #closePanel {
@@ -35,20 +39,35 @@ body{
     font-size: 20px;
     cursor: pointer;
 }
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 180%;
+    font-family: "Black Han Sans", sans-serif;
+    margin: 10px 0;
+}
+
 /*-- Profile --*/
 .profile {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     padding: 20px;
-    flex-direction: row; /* Default: horizontal layout */
+    flex-direction: row;
 }
 
 .profile img {
     max-width: 60%;
     height: auto;
     margin: 10px auto;
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 .right-profile {
@@ -57,23 +76,321 @@ body{
 }
 
 .right-profile h1 {
+    font-family: "Black Han Sans", sans-serif;
     font-size: 60px;
-    font-weight: 1000;
+    font-weight: 200;
+    font-style: normal;
     letter-spacing: -3px;
     margin: 10px auto;
 }
-.right-profile hr{
+
+.right-profile hr {
     width: 80%;
     border: 2px solid black;
     margin-left: 0%;
 }
-@media (max-width: 600px) { /* Adjust breakpoint as needed */
+
+.right-profile a {
+    letter-spacing: 3px;
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
     .profile {
-        flex-direction: column; /* Stack vertically on smaller screens */
-        align-items: center; /* Center items horizontally */
+        flex-direction: column;
+        align-items: center;
     }
 
     .profile img {
-        max-width: 100%; /* Make image wider on smaller screens */
+        max-width: 100%;
     }
+}
+
+/*-- About Me --*/
+.about {
+    background-image: url("/images/ABOUT ME.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    max-width: 95%;
+    width: 100%;
+    margin-top: 15%;
+    margin-left: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+    .about {
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        flex-direction: column;
+    }
+}
+
+.socials {
+    display: flex;
+    align-items: flex-start;
+}
+
+.line-and-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.vertical-line {
+    width: 3px;
+    height: 150px;
+    background: black;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-family: "Black Han Sans", sans-serif;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    font-size: 1.2em;
+    white-space: nowrap;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons a {
+    margin: 2px 7px;
+}
+
+.icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.graphics {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.graphics img {
+    width: 70%;
+    height: auto;
+    animation: zoomInOut 2s infinite alternate;
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.about-content {
+    width: 40%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.about-content h2 {
+    color: black;
+    margin-bottom: 10px;
+    font-family: "Black Han Sans", sans-serif;
+    font-size: 250%;
+}
+
+.about-content p {
+    color: black;
+    line-height: 1.6;
+    font-family: "Black Han Sans", sans-serif;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .graphics {
+        width: 100%;
+        order: 1;
+    }
+
+    .about-content {
+        width: 100%;
+        order: 2;
+    }
+
+    .socials {
+        width: 100px;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .line-and-text {
+        transform: rotate(-90deg);
+        flex-direction: column;
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+
+    .line-and-text,
+    .icons {
+        display: none; /* for hiding elements */
+    }
+
+    .vertical-line {
+        width: 3px;
+        height: 150px;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .icons {
+        flex-direction: column;
+    }
+
+    .icons a {
+        margin: 2px 7px;
+    }
+}
+
+/*-- Journey/Internship --*/
+.journey {
+    background-image: url("/images/INTERNSHIP.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    max-width: 95%;
+    width: 100%;
+    margin-top: 21%;
+    margin-left: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+}
+.my-journey {
+    width: 100%;
+}
+.my-journey h1 {
+    font-family: "Black Han Sans", sans-serif;
+    font-size: 60px;
+    font-weight: 200;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin: 10px auto; 
+    margin-top: -5%;
+    text-align: center; 
+    display: block;
+    width: 100%; 
+}
+.my-journey hr {
+    width: 20%;
+    border: 2px solid black;
+    align-items: center;
+}
+.journey-section {
+    position: relative;
+    width: 90%; 
+    margin: 20px auto;
+    margin-top: -10%; 
+}
+
+.journey-header {
+    text-align: center;
+}
+
+.journey-header h1 {
+    font-size: 3em; 
+    margin-bottom: 5px;
+    font-family: "Black Han Sans", sans-serif;
+}
+
+.journey-header hr {
+    width: 20%;
+    border: 2px solid black;
+    margin: 10px auto;
+}
+
+.journey-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+.column {
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.university, .company {
+    padding-bottom: 20px;
+}
+
+.journey-content h2 {
+    font-size: 2.5em; 
+    font-family: "Black Han Sans", sans-serif;
+    margin-bottom: 5px;
+    white-space: pre-line; 
+}
+
+.journey-content .dates {
+    font-size: 1em;
+    font-family: "Black Han Sans", sans-serif;
+    margin-bottom: 15px;
+}
+
+.journey-content h3 {
+    font-size: 1.5em;
+    font-family: "Black Han Sans", sans-serif;
+    margin-bottom: 10px;
+}
+
+.journey-content ul {
+    list-style-type: disc; 
+    padding-left: 20px;
+}
+
+.journey-content li {
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 10;
+    margin-bottom: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .journey-content {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/*-- Abilities --*/
+.abilities {
+    background-image: url("/images/ABILITIES.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    max-width: 95%;
+    width: 100%;
+    margin-top: 21%;
+    margin-left: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
 }

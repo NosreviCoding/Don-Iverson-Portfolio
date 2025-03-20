@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="/images/profile.png">
     <script src="index.js" defer></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
@@ -11,10 +12,19 @@
     <title>Don Iverson Portfolio</title>
 </head>
 <body>
-    <div class="navigation">
+    <div class="navigation" id="profile">
         <img src="/images/Menu Bar.png" alt="" id="clickableImage">
         <div class="left-panel" id="leftPanel">
-            <button id="closePanel">X</button> <p>This is the left panel content.</p>
+            <button id="closePanel">X</button> 
+
+            <div class="nav-links">
+                <a href="#profile">Profile</a>
+                <a href="#about">About</a>
+                <a href="#journey">Journey</a>
+                <a href="#abilities">Abilities</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
         </div>
     </div>
 
@@ -23,10 +33,92 @@
         <div class="right-profile">
             <h1>IVERSON DELIGENTE</h1>
             <hr>
-            <h3 style="font-weight: 1000;">Front End Developer/Web Designer</h3>
+            <h3 style="font-family: 'Black Han Sans' , san serif;">Front End Developer/Web Designer</h3>
             <a href="https://www.example.com/files/my-resume.pdf" download="my-resume.pdf">
-                <p>Download Resume</p>
+                <p>Download Resume</p> 
             </a>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="socials">
+            <div class="line-and-text">
+                <div class="vertical-line"></div>
+                <div class="text">About Me</div>
+            </div>
+            <div class="icons">
+                <a href="#" target="_blank">
+                    <img src="/images/icons/facebook.png" alt="Facebook">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="/images/icons/instagram.png" alt="Instagram">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="/images/icons/discord.png" alt="Discord">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="/images/icons/github.png" alt="Github">
+                </a>
+            </div>
+        </div>
+
+        <div class="graphics">
+            <img src="/images/graphics1.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2>WHO AM I?</h2>
+            <hr style="border: 2px solid black;">
+            <p>Hi, I'm Iverson, a fresh graduate with a passion for Web Designing, Front End Development, UI/UX. I'm eager to apply my skills and knowledge to create engaging and user-friendly digital experiences. This portfolio showcases some of my best work, demonstrating my abilities in Figma, HTML and CSS. I'm excited to explore new opportunities and contribute to innovative projects.</p>
+        </div>
+    </div> 
+
+    <div class="journey" id="journey">
+        <div class="socials">
+            <div class="line-and-text">
+                <div class="vertical-line"></div>
+                <div class="text">Internship</div>
+            </div>
+        </div>
+        <div class="journey-section">
+            <div class="journey-header">
+                <h1>My Journey</h1>
+                <hr>
+            </div>
+            <div class="journey-content">
+                <div class="column">
+                    <div class="university">
+                        <h2>BULACAN STATE UNIVERSITY<br>(BUSTOS CAMPUS)</h2>
+                        <p class="dates">2021-2025</p>
+                        <h3>Major and Certifications</h3>
+                        <ul>
+                            <li>Major in Web and Mobile Development</li>
+                            <li>Java Intermediate Certification from Sololearn</li>
+                            <li>CCNA Basics Certification from Alison</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="company">
+                        <h2>DC Steel Works OPC / DC<br>Monorack</h2>
+                        <p class="dates">2025-2025</p>
+                        <h3>Roles and Responsibilities</h3>
+                        <ul>
+                            <li>A Front End Developer in the DC Monorack Website.</li>
+                            <li>Collaboration with other team and providing reports to the project.</li>
+                            <li>Learning UI/UX Frameworks.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="abilities">
+        <div class="socials">
+            <div class="line-and-text">
+                <div class="vertical-line"></div>
+                <div class="text">Skill Set</div>
         </div>
     </div>
 </body>
