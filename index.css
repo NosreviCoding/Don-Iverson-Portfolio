@@ -65,7 +65,8 @@ html{
 
 .right-profile {
     flex: 1;
-    margin-left: 8%;
+    margin-left: 3%;
+    align-items: center;
 }
 
 .right-profile h1 {
@@ -97,6 +98,21 @@ html{
 
     .profile img {
         max-width: 100%;
+    }
+    .right-profile {
+        margin-left: -20%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        height: 100vh; 
+    }
+
+
+    .right-profile hr {
+        width: 50%; 
+        margin: 10px auto; 
     }
 }
 
@@ -370,6 +386,9 @@ html{
         width: 100%;
         margin-bottom: 20px;
     }
+    .journey-section{
+        margin-left: -20%;
+    }
 }
 
 /*-- Abilities --*/
@@ -640,6 +659,7 @@ p{
 
 .icons2 a {
     margin: 2px 7px;
+    text-decoration: none;
 }
 
 .icons2 img {
