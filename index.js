@@ -9,3 +9,5 @@ image.addEventListener("click", () => {
 closeButton.addEventListener("click", () => {
     panel.classList.remove("active"); // close
 });
+
+
