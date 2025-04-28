@@ -12,16 +12,28 @@
     <title>Don Iverson Portfolio</title>
 </head>
 <body>
-    <div class="navigation" id="profile">
-            <div class="nav-links">
-                <a href="#profile">Profile</a>
-                <a href="#about">About</a>
-                <a href="#journey">Journey</a>
-                <a href="#abilities">Abilities</a>
-                <a href="#projects">Projects</a>
-                <a href="#contacts">Contact</a>
-            </div>
-    </div>
+    <header id="nav">
+        <img src="/images/Racing Logo.png" alt="" class="logo">
+    
+        <!-- Hidden checkbox -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    
+        <!-- Burger label (for checkbox) -->
+        <label for="nav-toggle" class="burger">&#9776;</label>
+    
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#journey">Journey</a></li>
+                <li><a href="#abilities">Abilities</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
 
     <div class="profile">
         <img src="/images/profile.png" alt="">
@@ -68,7 +80,7 @@
         </div>
     </div> 
 
-    <div class="journey">
+    <div class="journey" id="journey">
         <div class="socials">
             <div class="line-and-text">
                 <div class="vertical-line"></div>
