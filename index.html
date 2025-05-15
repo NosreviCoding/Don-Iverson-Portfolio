@@ -9,7 +9,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
     </style>
-    <title>Don Iverson Portfolio</title>
+    <title>Iverson Deligente</title>
 </head>
 <body>
     <header id="nav">
@@ -33,21 +33,19 @@
         </nav>
     </header>
     
-    
-
-    <div class="profile">
+    <div class="profile scroll-fade-in">
         <img src="/images/profile.png" alt="">
         <div class="right-profile">
             <h1>IVERSON DELIGENTE</h1>
             <hr>
-            <h3 style="font-family: 'Black Han Sans' , san serif;">Front End Developer/Web Designer</h3>
-            <a href="https://www.example.com/files/my-resume.pdf" download="my-resume.pdf">
-                <p>Download Resume</p> 
+            <h3 style="font-family: 'Black Han Sans' , san-serif;">Front End Developer/Web Designer</h3>
+            <a href="Deligente, Iverson SJ..pdf" target=_blank>
+                <p>View Resume</p> 
             </a>
         </div>
     </div>
 
-    <div class="about" id="about">
+    <div class="about scroll-fade-in" id="about">
         <div class="socials">
             <div class="line-and-text">
                 <div class="vertical-line"></div>
@@ -80,7 +78,7 @@
         </div>
     </div> 
 
-    <div class="journey" id="journey">
+    <div class="journey scroll-fade-in" id="journey">
         <div class="socials">
             <div class="line-and-text">
                 <div class="vertical-line"></div>
@@ -121,7 +119,7 @@
         </div>
     </div>
 
-    <div class="abilities" id="abilities">
+    <div class="abilities scroll-fade-in" id="abilities">
         <div class="abilities-header">  <div class="socials">
                 <div class="line-and-text">
                     <div class="vertical-line"></div>
@@ -174,7 +172,7 @@
         </div>
     </div>
         
-    <section class="recent-works" id="projects">
+    <section class="recent-works scroll-fade-in" id="projects">
         <h2>Recent Works</h2>
         <div class="underline"></div>
 
@@ -269,7 +267,7 @@
         </div>
     </section>
 
-    <div class="contacts" id="contacts">
+    <div class="contacts scroll-fade-in" id="contacts">
         <div class="socials">
             <div class="line-and-text">
                 <div class="vertical-line"></div>
@@ -278,7 +276,7 @@
         </div>
     </div>
 
-    <div class="contacts-content">
+    <div class="contacts-content scroll-fade-in">
         <h1 style="font-size: 300%;">Let's Talk</h1>
         <h3 style="font-size: 200%;">You can visit me or message me via:</h3>
         <div class="icons2">
@@ -304,4 +302,21 @@
         <p>&copy; 2025 Iverson Deligente. All rights reserved.</p>
     </footer>
 </body>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .scroll-fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    .scroll-fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+</style>
+
 </html>

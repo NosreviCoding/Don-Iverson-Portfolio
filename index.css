@@ -49,8 +49,9 @@ header{
     display: inline-block;
     padding: 0px 20px;
 } 
-.nav__links li:hover{
-    border: 3px solid black;
+.nav__links li:hover, li a:hover{
+    color: white;
+    background-color: black;
     border-radius: 20px;
 }
 
@@ -104,13 +105,28 @@ header{
 }
 
 .right-profile h1 {
+    overflow: hidden;
+    white-space: nowrap;
     font-family: "Black Han Sans", sans-serif;
     font-size: 60px;
     font-weight: 200;
     font-style: normal;
     letter-spacing: -3px;
     margin: 10px auto;
+    animation: typing 3s steps(13), blink 0.75s step-end infinite;
 }
+
+@keyframes typing { /* Typing effect */
+    from {
+        width: 0ch;
+    }
+    to {
+        width: 13ch;
+    }
+}
+@keyframes blink {
+    50% { border-color: transparent }
+  }
 
 .right-profile hr {
     width: 80%;
