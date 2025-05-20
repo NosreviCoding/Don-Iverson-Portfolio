@@ -96,40 +96,28 @@ header{
     height: auto;
     margin: 10px auto;
     margin-left: 5%;
+    transition: filter 0.3s ease;
 }
-
+.profile img:hover {
+    filter: drop-shadow(0 0 6px black);
+}
 .right-profile {
     flex: 1;
-    margin-left: 3%;
-    align-items: center;
+    margin-left: 10%;
 }
 
 .right-profile h1 {
     overflow: hidden;
-    white-space: nowrap;
     font-family: "Black Han Sans", sans-serif;
     font-size: 60px;
     font-weight: 200;
     font-style: normal;
     letter-spacing: -3px;
     margin: 10px auto;
-    animation: typing 3s steps(13), blink 0.75s step-end infinite;
 }
-
-@keyframes typing { /* Typing effect */
-    from {
-        width: 0ch;
-    }
-    to {
-        width: 13ch;
-    }
-}
-@keyframes blink {
-    50% { border-color: transparent }
-  }
 
 .right-profile hr {
-    width: 80%;
+    width: 85%;
     border: 2px solid black;
     margin-left: 0%;
 }
@@ -150,7 +138,7 @@ header{
         max-width: 100%;
     }
     .right-profile {
-        margin-left: -40%;
+        margin-left: -20%;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -158,8 +146,6 @@ header{
         align-items: center; 
         height: 100vh; 
     }
-
-
     .right-profile hr {
         width: 50%; 
         margin: 10px auto; 
@@ -719,7 +705,7 @@ p{
 
 footer{
     text-align: center;
-    margin-top: 12% ;
+    margin-top: 12%;
     color: black;
     font-family: "Black Han Sans", sans-serif;
 }
